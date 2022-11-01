@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record model="ir.ui.view" id="view_partner_form_inherited">
+          <field name="name">Partner</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//button[@name='do_partner_mail']" position="after">
+                   <button name="action_bank_reconcile_bank_statements" type="object" string="Reconcil" groups="account.group_account_user"  attrs="{'invisible':[('payment_amount_due', '&lt;=', 0.0)]}"/>
+              </xpath>
+          </field>
+    </record>
+</odoo>

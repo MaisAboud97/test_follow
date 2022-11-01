@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_f:\odoo-community-1\extra\arados_followups_f:\odoo-community-1\extra\arados_followups,f:\odoo-community-1\extra\arados_followups.f:\odoo-community-1\extra\arados_followups,model_f:\odoo-community-1\extra\arados_followups_f:\odoo-community-1\extra\arados_followups,base.group_user,1,1,1,1

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- cron for auto excute -->
+    <record model="ir.cron" id="auto_excute_mail">
+        <field name="name">Follow-Up: Auto excute</field>
+        <field name="model_id" ref="model_res_partner"/>
+        <field name="state">code</field>
+        <field name="code">model._auto_excute()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+    </record>
+    
+ <!-- Manual Action -->
+    <record model="ir.cron" id="auto_test">
+            <field name="name">Follow-Up: Manual Action </field>
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="state">code</field>
+            <field name="code">model._send_activity()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+</odoo>
